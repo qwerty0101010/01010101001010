@@ -78,7 +78,7 @@ class TodoApp(ft.Column):
     def __init__(self):
         super().__init__()
         self.new_task = ft.TextField(
-            hint_text="What needs to be done?", on_submit=self.add_clicked, expand=True
+            hint_text="Que tarea deseas terminar?", on_submit=self.add_clicked, expand=True
         )
         self.tasks = ft.Column()
 
@@ -94,7 +94,7 @@ class TodoApp(ft.Column):
         self.width = 600
         self.controls = [
             ft.Row(
-                [ft.Text(value="Todos", theme_style=ft.TextThemeStyle.HEADLINE_MEDIUM)],
+                [ft.Text(value="Tareas que quiero hacer!", theme_style=ft.TextThemeStyle.HEADLINE_MEDIUM)],
                 alignment=ft.MainAxisAlignment.CENTER,
             ),
             ft.Row(
